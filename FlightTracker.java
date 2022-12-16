@@ -360,7 +360,7 @@ class EditableTable extends AbstractTableModel {
         	} else if(4 == columnIndex) {
         		row.setDepartureTime((String) aValue);
         	} else if(5 == columnIndex) {
-        		row.setPlane(Company.getPlaneInfo((Integer)aValue - 1));
+        		row.setPlane(Company.getPlaneInfo((Integer)aValue));
         	}
         } catch(InvalidDateException d) {
 			JOptionPane.showMessageDialog(null, "Please enter a valid date (mm/dd/yyyy)");
